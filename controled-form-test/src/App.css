@@ -1,0 +1,17 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.form-main{
+  width: 100%;
+  justify-content: center !important;
+  align-items: center;
+  background-color: red;
+}
+
+.myform{
+  width: 50%;
+ background-color: blue;
+}

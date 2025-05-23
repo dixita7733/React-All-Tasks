@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+}
+
+.inputbox{
+  margin: 50px 0px;
+}
+
+#searchitem{
+  padding: 10px 10px;
+}
+
+#wrapper{
+   margin-top: 3%;
+}
+
+#movieposters{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px;
+  overflow: hidden;
+  gap: 10px;
+}
+
+#movieposters li{
+  list-style: none;
+}
+
+li img{
+  height: 350px;
+  width: 300px;
+}

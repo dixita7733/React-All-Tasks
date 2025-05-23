@@ -1,0 +1,52 @@
+.border-box {
+
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Initially Hidden Borders */
+.border-top, .border-left, .border-bottom, .border-right {
+    position: absolute;
+    background-color: #179B5E;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.border-top {
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 5px;
+}
+
+.border-left {
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 25%;
+}
+
+.border-bottom {
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 5px;
+}
+
+.border-right {
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    height: 25%;
+}
+
+.border-box:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.border-box:hover .border-top,
+.border-box:hover .border-left,
+.border-box:hover .border-bottom,
+.border-box:hover .border-right {
+    opacity: 1;
+}

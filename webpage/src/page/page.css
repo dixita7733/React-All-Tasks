@@ -1,0 +1,572 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+
+h1{
+    color: whitesmoke;
+}
+.banner-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/banner-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5% 100px 5%;
+}
+.left-container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@keyframes animateWords {
+	0% {
+		transform: translateY(0%);
+	}
+	
+	70% {
+		transform: translateY(-100%);
+	}
+	
+	100% {
+		transform: translateY(-200%);
+	}
+	
+
+
+}
+
+ span {
+		position: relative;
+		display: inline-block;
+		color: #FF3C41;
+		height: 1.25em;
+		vertical-align: bottom;
+		overflow: hidden;
+		
+		span {
+			display: block;
+			animation: animateWords 4s infinite ease;
+		}
+	}
+
+
+@keyframes animateWords {
+	0% {
+		transform: translateY(0%);
+	}
+	
+	70% {
+		transform: translateY(-100%);
+	}
+	
+	100% {
+		transform: translateY(-200%);
+	}
+	
+
+}
+.banner-left{
+    width: 50%;
+}
+
+.left-container-text {
+    display: flex;
+    width: 50%;
+    gap: 13px;
+    color: white;
+}
+
+.banner-left h1 , .banner-left p{
+    color: white;
+}
+.banner-para{
+    padding-top: 10px;
+    font-size: 22px;
+    color: white;
+
+}
+.banner-numbers, .banner-btns{
+    display: flex;
+    margin-top: 20px;
+    gap: 70px;
+}
+.banner-btns{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+}
+.numbanner{
+    margin-top: 10px;
+}
+
+.banner-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-right img{
+   width: 90%;
+}
+
+
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 70px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21E786;
+  }
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+.content{
+    font-size: 30px;
+    font-weight: 900;
+    color: #030A10;
+    display: flex;
+    gap: 30px;
+}  
+
+.about-container{
+    width: 100%;
+    background-image: url(../assets/aboutbg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px 5%;
+}
+.about-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    gap: 20px;
+    color: white;
+    padding-bottom: 70px;
+}
+.about-head p{
+    color: #7c7d7e;
+    font-size: 20px;
+}
+.aboutnums{
+    display: flex;
+    gap: 60px;
+}
+.leftan, .rightan{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.leftan h3, .rightan h3{
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.about-content {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+
+.about-box {
+    background-color: #141B22;
+    width: 25%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px 40px 20px;
+    position: relative; 
+}
+
+
+
+
+
+.aboutnum{
+    color: #185940;
+    font-weight: 900;
+    font-size: 75px;
+}
+.abhead{
+    color: white;
+    margin-top: -15%;
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.about-box p{
+    font-size: 19px;
+    color: #B8B9BB;
+}
+
+.leftslide .slide{
+    background-color: #141B22;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px 40px 20px;
+    position: relative; 
+}
+
+.leftslide{
+    padding-top: 50px;
+}
+.rightslide{
+    padding-bottom: 50px;
+}
+
+.rightslide .slide{
+    background-color: #141B22;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px 40px 20px;
+    position: relative; 
+}
+.rightslide img{
+    height: 190px;
+}
+
+.footer-subscribe h3{
+    color: white;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-150px * 6)); }
+}
+
+@keyframes rightscrol {
+    0% { transform: translateX(calc(-60px * 6)); }
+    100% { transform: translateX(0); }
+
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 300px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.leftslide .slide-track {
+    animation: scroll 25s linear infinite;
+    display: flex;
+    width: calc(450px * 6);
+}
+
+
+.rightslide .slide-track{
+    animation: rightscrol 25s linear infinite;
+    display: flex;
+    width: calc(450px * 6);
+}
+
+.slider{
+    background-color: #040B11;
+}
+
+
+.Roadmap-container .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Roadmap-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Roadmap-container .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+/* work  */
+.work{
+    background-color: #040B11;
+    padding: 50px 5%;
+}
+.workhead{
+    text-align: center;
+    padding-bottom: 6%;
+    padding-top: 3%;
+}
+.workbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.wbox{
+    background-color: #141B22;
+    padding: 20px;
+    margin: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+    color: white;
+    letter-spacing: 1px;
+    position: relative;
+    width: 25%;
+}
+.wbox img{
+    height: 30%;
+    margin-bottom: 20px;
+}
+.team .wbox{
+    align-items: center;
+}
+.team img{
+    height: 50%;
+}
+
+.join-content{
+    width: 100%;
+    background-image: url(../assets/bg-action.png), linear-gradient(268.28deg, #2333de -1.34%, #0abe66);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+.join-content p{
+    font-size: 20px;
+    color: rgb(216, 214, 214);
+}
+.join-content h1{
+    font-size: 40px;
+}
+
+
+
+/* Tablet view (768px - 1023px) */
+@media only screen and (max-width: 1023px) {
+    .banner-container {
+        padding: 5% 5%;
+        height: auto;
+  }
+    .left-container {
+        width: 100%;
+    }
+    .banner-left, .banner-right {
+        width: 100%;
+    }
+    .banner-left h1 {
+        font-size: 28px; 
+    }
+    .banner-para {
+        font-size: 18px; 
+    }
+    .banner-numbers, .banner-btns {
+        flex-direction: row;
+        gap: 20px; 
+    }
+    .banner-btns {
+        margin-top: 20px; 
+    }
+    .marquee {
+        height: 50px; 
+    }
+    .content {
+        font-size: 24px; 
+        gap: 20px;
+    }
+    .about-container {
+        padding: 70px 5%; 
+    }
+    .about-head {
+        width: 100%; 
+        gap: 10px; 
+    }
+    .aboutnums {
+        flex-direction: row;
+        gap: 40px; 
+    }
+    .leftan h3, .rightan h3 {
+        font-size: 18px; 
+    }
+    .about-box, .leftslide .slide, .rightslide .slide {
+        width: 100%; 
+        padding: 30px 10px; 
+        margin: 15px 22px;
+    }
+    .aboutnum {
+        font-size: 50px; 
+    }
+    .abhead {
+        font-size: 22px; 
+    }
+    .rightslide img {
+        height: 222px;
+    }
+    .slider::before,
+    .slider::after {
+        width: 200px; 
+    }
+    .leftslide .slide-track, .rightslide .slide-track {
+        width: calc(350px * 6); 
+    }
+}
+
+/* Mobile view (up to 767px) */
+@media only screen and (max-width: 767px) {
+    .banner-container {
+        padding: 0px 5%;
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+    .banner-right img {
+        width: 100%;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+    .banner-left, .banner-right {
+        width: 100%;
+    }
+    .banner-left h1 {
+        font-size: 24px; 
+    }
+    .banner-para {
+        font-size: 16px; 
+    }
+    .banner-numbers, .banner-btns {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-around;
+    }
+    .banner-btns {
+        margin-top: 15px; 
+    }
+    .marquee {
+        height: 40px; 
+    }
+    .content {
+        font-size: 20px; 
+        gap: 15px; 
+    }
+
+    .about-content{
+        flex-direction: column;
+        padding-inline: 15%;
+    }
+    .about-container {
+        padding: 50px 5%; 
+    }
+    .about-head {
+        width: 100%; 
+        gap: 10px; 
+    }
+    .aboutnums {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    .leftan h3, .rightan h3 {
+        font-size: 16px; 
+    }
+    .about-box, .leftslide .slide, .rightslide .slide {
+        width: 100%;
+        padding: 20px 10px; 
+        margin: 10px 10px;
+    }
+    .aboutnum {
+        font-size: 40px; 
+    }
+    .abhead {
+        font-size: 18px; 
+    }
+    .rightslide img {
+        height: 230px; 
+    }
+    .slider::before,
+    .slider::after {
+        width: 150px; 
+    }
+    .leftslide .slide-track, .rightslide .slide-track {
+        width: calc(300px * 6); 
+    }
+}
+
+
+
+

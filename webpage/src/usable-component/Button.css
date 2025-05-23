@@ -1,0 +1,9 @@
+.socials{
+    display: flex;
+    gap: 20px;
+}
+.socials button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

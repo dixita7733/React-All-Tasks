@@ -1,0 +1,30 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+.loader{
+  display: flex
+;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-size: 30px;
+
+}
+.name-container {
+  display: flex
+;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-size: 40px;
+
+}

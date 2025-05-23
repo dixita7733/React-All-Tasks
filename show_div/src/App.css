@@ -1,0 +1,43 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#root{
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+button{
+  border: 1px solid black;
+  margin: 50px 0px;
+}
+
+body{
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: auto !important;
+  align-items: center;
+
+}
+
+.div1{
+  height: 50px;
+  width: 100px;
+  background-color: chocolate;
+  margin: 10px 5px;
+}
+
+.mydiv{
+  height: 50px;
+  width: 100%;
+  background-color: aqua;
+  margin: 10px;
+}

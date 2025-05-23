@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mainCard {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mainCard:hover {
+  transform: scale(1.05);
+}
+
+.cardImg {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardInfo {
+  padding: 15px;
+  text-align: center;
+}
+
+.cardInfo h1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.cardInfo span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.filterdata {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin: 50px 0px;
+  padding-right: 10%;
+}
+.myproduct{
+  padding: 5px;
+}
+select#myproduct {
+  padding: 5px;
+  border-radius: 10px;
+  width: 108px;
+  font-weight: 600;
+  border-color: #000000;
+}
+
+
+@media (max-width: 768px) {
+  .mainCard {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainCard {
+    width: 90%;
+  }
+}
